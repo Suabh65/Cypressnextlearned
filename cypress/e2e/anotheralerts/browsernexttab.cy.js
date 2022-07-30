@@ -6,8 +6,8 @@ describe('Example to demonstrate the handling of new browser windows in cypress'
         cy.get("#item-0 > span").contains('Browser Windows').click({force:'true'}) 
         cy.get('#tabButton').click({force:true})
         
-            cy.url().should('include', 'https://demoqa.com/browser-windows')
-        cy.get('h3')
+            cy.url().should('include', 'https://demoqa.com/sample')
+        cy.get('#sampleHeading')
             .should('have.text', 'This is a sample page')
     })
 
